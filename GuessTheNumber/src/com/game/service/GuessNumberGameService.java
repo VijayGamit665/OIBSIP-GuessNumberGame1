@@ -25,13 +25,16 @@ public class GuessNumberGameService {
             if (randomNum < guess) {
                 Main.attempts++;
                 panel.showMessageDialog(null, "Your number Smaller then " + guess + " guess");
+                Main.score = 0;
                 updateLabels();
+
                 if (targetAttempt == i) {
                     addMoreRounds();
                 }
             } else if (randomNum > guess) {
                 Main.attempts++;
                 panel.showMessageDialog(null, "Your Number Largest then " + guess + " guess");
+                Main.score = 0;
                 updateLabels();
                 if (targetAttempt == i) {
                     addMoreRounds();
