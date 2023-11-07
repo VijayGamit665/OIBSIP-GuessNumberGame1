@@ -13,7 +13,6 @@ public class GuessNumberGameService {
         panel.showMessageDialog(null, "Welcome to the Number Guessing Game!");
         panel.showMessageDialog(null, "Chooses a Number between 1 to 100");
 
-
         for (int i = 10; i > 0; i--) {  // for loop use for limiting attempts
 
             panel.showMessageDialog(null, "You Have " + i + " guess left. Try Again");
